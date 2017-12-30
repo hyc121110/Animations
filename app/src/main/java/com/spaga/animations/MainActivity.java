@@ -12,8 +12,9 @@ public class MainActivity extends AppCompatActivity {
         ImageView image1 = findViewById(R.id.image1);
         //ImageView image2 = findViewById(R.id.image2);
 
-        image1.animate().rotation(180f).setDuration(2000);
-        /*image1.animate().translationXBy(1000f).setDuration(2000);
+        image1.animate().scaleX(0.5f).scaleY(0.5f).setDuration(2000);
+        /*image1.animate().rotation(180f).setDuration(2000);
+        image1.animate().translationXBy(1000f).setDuration(2000);
         image1.animate().translationYBy(1000f).setDuration(2000);
         image1.animate().alpha(0f).setDuration(2000);
         image2.animate().alpha(1f).setDuration(2000);*/

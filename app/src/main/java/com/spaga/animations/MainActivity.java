@@ -12,7 +12,8 @@ public class MainActivity extends AppCompatActivity {
         ImageView image1 = findViewById(R.id.image1);
         //ImageView image2 = findViewById(R.id.image2);
 
-        image1.animate().translationYBy(1000f).setDuration(2000);
+        image1.animate().translationXBy(1000f).setDuration(2000);
+        //image1.animate().translationYBy(1000f).setDuration(2000);
         //image1.animate().alpha(0f).setDuration(2000);
         //image2.animate().alpha(1f).setDuration(2000);
     }
@@ -22,5 +23,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        ImageView image1 = findViewById(R.id.image1);
+        image1.setTranslationX(-1000f);
     }
 }
